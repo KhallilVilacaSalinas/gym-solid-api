@@ -1,3 +1,14 @@
 {
-    "cSpell.language": "pt-BR,en"
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "api-gym-solid",
+            "database": "apisolid",
+            "username": "docker",
+            "password": "docker"
+        }
+    ]
 }
