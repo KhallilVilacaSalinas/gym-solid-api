@@ -5,7 +5,7 @@ import { InMemoryUserRepository } from "@/repository/in-memory/in-memory-user-re
 import { UserAlreadyExistsError } from "./errors/user-already-exists-error";
 
 describe('Register Use Case', () => {
-    it('should hash user password upon registration', async () => {
+    it.only('should hash user password upon registration', async () => {
         const userRepository = new InMemoryUserRepository();
         const registerUseCase = new RegisterUseCase(userRepository);
 
@@ -32,7 +32,7 @@ describe('Register Use Case', () => {
             password: '1234556'
         });
 
-        expect(() => 
+        await expect(() => 
             registerUseCase.execute({
                 name: 'John Due',
                 email,

@@ -3,3 +3,4 @@ build
 .vscode
 .env
 nodesource_setup.sh
+coverage
